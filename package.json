@@ -1,6 +1,23 @@
 {
   "name": "parcel-plugin-purgecss",
   "version": "0.0.1",
+  "description": "A Parcel plugin to remove unused rules from your bundled CSS files.",
+  "keywords": [
+    "css",
+    "parcel",
+    "parcel-plugin",
+    "purge",
+    "purgecss",
+    "purify",
+    "purifycss"
+  ],
+  "homepage": "https://github.com/cprecioso/parcel-plugin-purgecss#readme",
+  "bugs": {
+    "url": "https://github.com/cprecioso/parcel-plugin-purgecss/issues"
+  },
+  "repository": "git+https://github.com/cprecioso/parcel-plugin-purgecss.git",
+  "license": "MIT",
+  "author": "Carlos Precioso <kalprestito@gmail.com>",
   "files": [
     "index.js",
     "asset.js"
@@ -10,6 +27,7 @@
     "build": "tsc --build",
     "clean": "del-cli '**/*.{js{,.map},d.ts}' '!node_modules/**/*'",
     "dev": "npm run watch",
+    "prepublish": "npm run build",
     "watch": "tsc --watch"
   },
   "dependencies": {
