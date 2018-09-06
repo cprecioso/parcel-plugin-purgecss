@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": false,
+    "rootDir": "."
+  },
+  "include": ["./**/*", "../types/**/*"],
+  "exclude": ["node_modules/**/*"]
+}

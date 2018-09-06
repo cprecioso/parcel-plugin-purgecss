@@ -1,0 +1,27 @@
+{
+  "name": "parcel-plugin-purgecss",
+  "version": "0.0.1",
+  "files": [
+    "index.js",
+    "asset.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "del-cli '**/*.{js{,.map},d.ts}' '!node_modules/**/*'",
+    "dev": "npm run watch",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "purgecss": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "del-cli": "^1.1.0",
+    "parcel-bundler": "^1.9.7",
+    "typescript": "^3.0.3"
+  },
+  "peerDependencies": {
+    "parcel-bundler": "^1.9.7"
+  }
+}
