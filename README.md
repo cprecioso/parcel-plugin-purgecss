@@ -17,13 +17,13 @@ Just install the plugin as a dependency using yarn/npm/pnpm/... and build normal
 ## Installation
 
 ```
-yarn add parcel-plugin-purifycss
+yarn add parcel-plugin-purgecss
 ```
 
 or
 
 ```
-npm install parcel-plugin-purifycss
+npm install parcel-plugin-purgecss
 ```
 
 ## Issues
