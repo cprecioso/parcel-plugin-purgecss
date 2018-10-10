@@ -11,7 +11,7 @@ export = class PurgedCSSAsset extends CSSAsset {
       return source
     }
 
-    const extensions = ["html", "js", "jsx", "vue", "svelte"]
+    const extensions = ["html", "js", "jsx", "vue", "svelte", "pug"]
     const content = extensions.map(ext => `${this.options.rootDir}/**/*.${ext}`)
 
     const purger = new PurgeCSS({
