@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-purgecss",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A Parcel plugin to remove unused rules from your bundled CSS files.",
   "keywords": [
     "css",
