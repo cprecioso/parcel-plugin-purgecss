@@ -28,4 +28,4 @@ npm install parcel-plugin-purgecss
 
 ## Issues
 
-This plugin will look for files in your project folder with the following extensions: `html`, `js`, `jsx`, `vue` and `svelte`. Those extensions are hard-coded at the moment.
+This plugin will look for files in your project folder with the following extensions: `html`, `js`, `jsx`, `vue`, `svelte` and `pug`. Those extensions are hard-coded at the moment (take a look at [issue #4](https://github.com/cprecioso/parcel-plugin-purgecss/issues/4)).
