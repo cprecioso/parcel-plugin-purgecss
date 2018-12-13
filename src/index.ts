@@ -1,5 +1,4 @@
-import { Plugin } from "parcel-bundler"
-
-export = (bundler => {
+const plugin = bundler => {
   bundler.addAssetType("css", require.resolve("./asset"))
-}) as Plugin
+}
+export = plugin
