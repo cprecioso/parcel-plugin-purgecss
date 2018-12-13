@@ -33,10 +33,10 @@
     "purgecss": "^1.1.0"
   },
   "devDependencies": {
-    "@types/node": "^10.9.4",
+    "@types/node": "^10.12.15",
     "del-cli": "^1.1.0",
-    "parcel-bundler": "^1.9.7",
-    "typescript": "^3.0.3"
+    "parcel-bundler": "^1.10.3",
+    "typescript": "^3.2.2"
   },
   "peerDependencies": {
     "parcel-bundler": "^1.9.7"
