@@ -1,21 +1,21 @@
 declare module "parcel-bundler/src/Asset" {
-  namespace Asset {
-    interface Options {
-      minify: boolean
-      rootDir: string
-    }
-  }
-
   class Asset {
-    options: Asset.Options
-    load(): Promise<string>
+    name: string
+    options: { minify: boolean }
+    getConfig(filenames: string[], { packageKey: string }): Promise<any>
+    transform(): void
+    parseIfNeeded(): Promise<void>
   }
-
   export = Asset
 }
 
 declare module "parcel-bundler/src/assets/CSSAsset" {
   import Asset = require("parcel-bundler/src/Asset")
-  class CSSAsset extends Asset {}
+  import postcss = require("postcss")
+
+  class CSSAsset extends Asset {
+    getCSSAst(): postcss.Result
+    ast: { css: string; dirty: boolean }
+  }
   export = CSSAsset
 }

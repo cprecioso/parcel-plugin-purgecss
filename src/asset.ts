@@ -1,22 +1,26 @@
+import purgecss = require("@fullhuman/postcss-purgecss")
 import CSSAsset = require("parcel-bundler/src/assets/CSSAsset")
-import PurgeCSS = require("purgecss")
+import postcss = require("postcss")
 
 export = class PurgedCSSAsset extends CSSAsset {
-  async load() {
-    const source = Promise.resolve(super.load())
-
+  async transform() {
     if (this.options.minify) {
-      return source
+      const config = await this.getConfig(["purgecss.config.js"], {
+        packageKey: "purgecss"
+      })
+
+      if (!config) return
+
+      await this.parseIfNeeded()
+      const res = await postcss([purgecss(config)]).process(this.getCSSAst(), {
+        from: this.name,
+        to: this.name
+      })
+
+      this.ast.css = res.css
+      this.ast.dirty = false
     }
 
-    const extensions = ["html", "js", "jsx", "vue", "svelte", "pug"]
-    const content = extensions.map(ext => `${this.options.rootDir}/**/*.${ext}`)
-
-    const purger = new PurgeCSS({
-      content,
-      css: [{ extension: "css", raw: await source }]
-    })
-    const [result] = purger.purge()
-    return result.css
+    await super.transform()
   }
 }
