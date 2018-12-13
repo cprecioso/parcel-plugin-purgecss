@@ -19,13 +19,12 @@
   "license": "MIT",
   "author": "Carlos Precioso <kalprestito@gmail.com>",
   "files": [
-    "index.js",
-    "asset.js"
+    "lib"
   ],
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc --build",
-    "clean": "del-cli '**/*.{js{,.map},d.ts}' '!node_modules/**/*'",
+    "clean": "del-cli 'lib/**/*'",
     "dev": "npm run watch",
     "prepublishOnly": "npm run clean && npm run build",
     "watch": "tsc --watch"

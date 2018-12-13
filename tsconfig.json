@@ -5,8 +5,9 @@
     "moduleResolution": "node",
     "strict": true,
     "noImplicitAny": false,
-    "rootDir": "."
+    "rootDir": "src",
+    "outDir": "lib"
   },
-  "include": ["./**/*", "../types/**/*"],
+  "include": ["src/**/*", "types/**/*"],
   "exclude": ["node_modules/**/*"]
 }
