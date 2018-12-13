@@ -1,6 +1,7 @@
 declare module "parcel-bundler/src/Asset" {
   namespace Asset {
     interface Options {
+      minify: boolean
       rootDir: string
     }
   }

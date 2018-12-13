@@ -5,7 +5,7 @@ export = class PurgedCSSAsset extends CSSAsset {
   async load() {
     const source = Promise.resolve(super.load())
 
-    if (process.env.NODE_ENV !== "production") {
+    if (this.options.minify) {
       return source
     }
 
