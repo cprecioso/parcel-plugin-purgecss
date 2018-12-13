@@ -2,8 +2,6 @@ import CSSAsset = require("parcel-bundler/src/assets/CSSAsset")
 import PurgeCSS = require("purgecss")
 
 export = class PurgedCSSAsset extends CSSAsset {
-  options: any
-
   async load() {
     const source = Promise.resolve(super.load())
 
