@@ -12,7 +12,11 @@ This is very useful if you're using a full-featured CSS framework like Bootstrap
 
 ## Usage
 
-Just install the plugin as a dependency using yarn/npm/pnpm/... and build normally with Parcel. There are no configuration options.
+1. Install the plugin as a dependency in your `package.json`.
+2. Create a `purgecss.config.js` file in the root of your module and fill it out with the [options you need from PurgeCSS](https://www.purgecss.com/with-postcss). Note that the `content` option is **required**. You can also add your options to a `purgecss` key on your `package.json`.
+3. Build normally
+
+This plugin is only enabled when `minify: true`, which means it won't run on `parcel serve`.
 
 ## Installation
 
@@ -25,7 +29,3 @@ or
 ```
 npm install parcel-plugin-purgecss
 ```
-
-## Issues
-
-This plugin will look for files in your project folder with the following extensions: `html`, `js`, `jsx`, `vue`, `svelte` and `pug`. Those extensions are hard-coded at the moment (take a look at [issue #4](https://github.com/cprecioso/parcel-plugin-purgecss/issues/4)).
