@@ -4,7 +4,6 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "strict": true,
-    "noImplicitAny": false,
     "rootDir": "src",
     "outDir": "lib"
   },
