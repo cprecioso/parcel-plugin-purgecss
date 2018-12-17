@@ -1,8 +1,8 @@
 dependencies:
-  '@fullhuman/postcss-purgecss': 1.1.0
-  postcss: 6.0.23
+  purgecss: 1.1.0
 devDependencies:
   '@types/node': 10.12.15
+  '@types/parcel-bundler': 1.10.1
   del-cli: 1.1.0
   parcel-bundler: 1.10.3
   typescript: 3.2.2
@@ -736,12 +736,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-b4v7dyfApuKDvmPb+O488UlGuR1WbwMXFsO/cyqMrnfvRAChZKJAYeeglWTjUO1b9UghKKgepAQM5tsvBJca6A==
-  /@fullhuman/postcss-purgecss/1.1.0:
-    dependencies:
-      purgecss: 1.1.0
-    dev: false
-    resolution:
-      integrity: sha512-NaNJgn4ZtrWveVnele/eCW/AJYL6dwG6AW86QYQQsqOsXy8rHsA1LoDxuFye0a9PKA7lbH3h4/OxzMwkGDCqXQ==
   /@mrmlnc/readdir-enhanced/2.2.1:
     dependencies:
       call-me-maybe: 1.0.1
@@ -761,6 +755,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-9kROxduaN98QghwwHmxXO2Xz3MaWf+I1sLVAA6KJDF5xix+IyXVhds0MAfdNwtcpSrzhaTsNB0/jnL86fgUhqA==
+  /@types/parcel-bundler/1.10.1:
+    dev: true
+    resolution:
+      integrity: sha512-k8bj0ZAq8B4hVxsRBGG+O4uWzTBIRQNrs0naFw+DZYMmpqrywqowwkVOFooGm7VSvcf+6kk59bq0M6621+TQ8Q==
   /@types/q/1.5.1:
     dev: true
     resolution:
@@ -4490,6 +4488,7 @@ packages:
       chalk: 2.4.1
       source-map: 0.6.1
       supports-color: 5.5.0
+    dev: true
     engines:
       node: '>=4.0.0'
     resolution:
@@ -5789,9 +5788,9 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  '@fullhuman/postcss-purgecss': ^1.1.0
   '@types/node': ^10.12.15
+  '@types/parcel-bundler': ^1.10.1
   del-cli: ^1.1.0
   parcel-bundler: ^1.10.3
-  postcss: ^6.0.19
+  purgecss: ^1.1.0
   typescript: ^3.2.2

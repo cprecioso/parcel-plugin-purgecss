@@ -1,4 +1,7 @@
-const plugin = bundler => {
-  bundler.addAssetType("css", require.resolve("./asset"))
+type Bundler = import("parcel-bundler")
+
+const plugin = (bundler: Bundler) => {
+  bundler.addPackager("css", require.resolve("./packager"))
 }
+
 export = plugin
