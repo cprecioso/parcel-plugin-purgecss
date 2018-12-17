@@ -18,6 +18,8 @@ This is very useful if you're using a full-featured CSS framework like Bootstrap
 
 This plugin is only enabled when `minify: true`, which means it won't run on `parcel serve`.
 
+Also, the entry stylesheet _must_ be in your package. That means that if you a stylesheet of your npm dependencies directly from a JS or HTML file, it will not be purged. If you import it directly or indirectly from another stylesheet in your main package (or SASS, Stylus, etc), it's fine.
+
 ## Options
 
 They are passed directly to the purgecss postcs plugin. [Here's a list of the available options.](https://www.purgecss.com/with-postcss#options)
