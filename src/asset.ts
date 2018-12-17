@@ -3,7 +3,7 @@ import CSSAsset = require("parcel-bundler/src/assets/CSSAsset")
 import postcss = require("postcss")
 
 export = class PurgedCSSAsset extends CSSAsset {
-  async transform() {
+  async pretransform() {
     if (this.options.minify) {
       const config = await this.getConfig(["purgecss.config.js"], {
         packageKey: "purgecss"
@@ -21,6 +21,6 @@ export = class PurgedCSSAsset extends CSSAsset {
       this.ast.dirty = false
     }
 
-    await super.transform()
+    await super.pretransform()
   }
 }

@@ -3,7 +3,8 @@ declare module "parcel-bundler/src/Asset" {
     name: string
     options: { minify: boolean }
     getConfig(filenames: string[], { packageKey: string }): Promise<any>
-    transform(): void
+    transform(): Promise<void>
+    pretransform(): Promise<void>
     parseIfNeeded(): Promise<void>
   }
   export = Asset
