@@ -41,5 +41,8 @@
   },
   "peerDependencies": {
     "parcel-bundler": "^1.10.3"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }
