@@ -34,11 +34,13 @@ module.exports = {
 ## Installation
 
 ```
-yarn add parcel-plugin-purgecss
+yarn add --dev parcel-bundler parcel-plugin-purgecss
 ```
 
 or
 
 ```
-npm install parcel-plugin-purgecss
+npm install -D parcel-bundler parcel-plugin-purgecss
 ```
+
+`parcel-bundler` is a peer dependency
