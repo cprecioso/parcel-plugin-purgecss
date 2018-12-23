@@ -27,9 +27,11 @@ They are passed directly to the purgecss postcs plugin. [Here's a list of the av
 ```js
 module.exports = {
   content: ["**/*.html"],
-  whitelist: [".my-very-special-class"]
+  whitelist: ["my-very-special-class"]
 }
 ```
+
+Note that whitelisting applies to any element, id or class that match the provided names as mentioned in the [purgecss docs](https://www.purgecss.com/whitelisting#specific-selectors).
 
 ## Installation
 
