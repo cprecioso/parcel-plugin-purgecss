@@ -31,7 +31,7 @@ module.exports = {
 }
 ```
 
-Note that whitelisting applies to any element, id or class that match the provided names as mentionned in the [purgecss docs](https://www.purgecss.com/whitelisting#specific-selectors).
+Note that whitelisting applies to any element, id or class that match the provided names as mentioned in the [purgecss docs](https://www.purgecss.com/whitelisting#specific-selectors).
 
 ## Installation
 
