@@ -20,7 +20,7 @@ This plugin is only enabled when `minify: true`, which means it won't run on `pa
 
 ## Options
 
-They are passed directly to the purgecss postcs plugin. [Here's a list of the available options.](https://www.purgecss.com/configuration)
+They are passed directly to the purgecss postcss plugin. [Here's a list of the available options.](https://www.purgecss.com/configuration)
 
 `purgecss.config.js`:
 
@@ -31,7 +31,7 @@ module.exports = {
 }
 ```
 
-Note that whitelisting applies to any element, id or class that match the provided names as mentioned in the [purgecss docs](https://www.purgecss.com/whitelisting#specific-selectors).
+Note that whitelisting applies to any element, id, or class that matches the provided names, as mentioned in the [purgecss docs](https://www.purgecss.com/whitelisting#specific-selectors).
 
 ## Installation
 
@@ -45,8 +45,8 @@ or
 npm install -D parcel-bundler parcel-plugin-purgecss
 ```
 
-`parcel-bundler` is a peer dependency
+`parcel-bundler` is a peer dependency.
 
 ## Known issues
 
-[The entry stylesheet _must_ be in your package.](https://github.com/cprecioso/parcel-plugin-purgecss/issues/10) That means that if you a stylesheet of your npm dependencies directly from a JS or HTML file, it will not be purged. If you import it directly or indirectly from another stylesheet in your main package (or SASS, Stylus, etc), it's fine.
+[The entry stylesheet _must_ be in your package.](https://github.com/cprecioso/parcel-plugin-purgecss/issues/10) That means that if you a stylesheet of your npm dependencies directly from a JS or HTML file, it will not be purged. If you import it directly or indirectly from another stylesheet in your main package (or SASS, Stylus, etc.), it's fine.
