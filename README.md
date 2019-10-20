@@ -49,4 +49,4 @@ npm install -D parcel-bundler parcel-plugin-purgecss
 
 ## Known issues
 
-[The entry stylesheet _must_ be in your package.](https://github.com/cprecioso/parcel-plugin-purgecss/issues/10) That means that if you a stylesheet of your npm dependencies directly from a JS or HTML file, it will not be purged. If you import it directly or indirectly from another stylesheet in your main package (or SASS, Stylus, etc.), it's fine.
+[The entry stylesheet _must_ be in your package.](https://github.com/cprecioso/parcel-plugin-purgecss/issues/10) That means that if you have a stylesheet of your npm dependencies directly from a JS or HTML file, it will not be purged. If you import it directly or indirectly from another stylesheet in your main package (or SASS, Stylus, etc.), it's fine.
