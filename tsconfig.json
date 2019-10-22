@@ -1,10 +1,6 @@
 {
+  "extends": "@cprecioso/tsconfig/esm",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
     "rootDir": "src",
     "outDir": "lib"
   },

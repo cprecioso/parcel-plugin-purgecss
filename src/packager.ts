@@ -1,6 +1,6 @@
-import CSSPackager = require("parcel-bundler/src/packagers/CSSPackager")
-import CSSAsset = require("parcel-bundler/src/assets/CSSAsset")
-import PurgeCSS = require("purgecss")
+import CSSAsset from "parcel-bundler/src/assets/CSSAsset"
+import CSSPackager from "parcel-bundler/src/packagers/CSSPackager"
+import PurgeCSS from "purgecss"
 
 class PurgeCSSPackager extends CSSPackager {
   async addAsset(asset: CSSAsset) {
@@ -22,4 +22,4 @@ class PurgeCSSPackager extends CSSPackager {
   }
 }
 
-export = PurgeCSSPackager
+export default PurgeCSSPackager
