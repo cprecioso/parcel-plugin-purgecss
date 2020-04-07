@@ -991,7 +991,7 @@
   dependencies:
     estree-walker "^1.0.1"
 
-"@types/babel__core@^7.1.6":
+"@types/babel__core@^7.1.7":
   version "7.1.7"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.7.tgz#1dacad8840364a57c98d0dd4855c6dd3752c6b89"
   integrity sha512-RL62NqSFPCDK2FM1pSDH0scHpJvsXtZNiYlMB73DgPBaG1E38ZYVL+ei5EkWRbr+KC4YNiAUNBnRj+bgwpgjMw==
@@ -1081,7 +1081,7 @@
   resolved "https://registry.yarnpkg.com/@types/ua-parser-js/-/ua-parser-js-0.7.33.tgz#4a92089511574e12928a7cb6b99a01831acd1dd7"
   integrity sha512-ngUKcHnytUodUCL7C6EZ+lVXUjTMQb+9p/e1JjV5tN9TVzS98lHozWEFRPY1QcCdwFeMsmVWfZ3DPPT/udCyIw==
 
-"@wessberg/browserslist-generator@^1.0.34":
+"@wessberg/browserslist-generator@^1.0.35":
   version "1.0.35"
   resolved "https://registry.yarnpkg.com/@wessberg/browserslist-generator/-/browserslist-generator-1.0.35.tgz#780f9770865610cb3db17c18156e82296d25dfd1"
   integrity sha512-3Lq2nVq9CqkzJhBCHx6CMxrdTBmICPpVmhTBOYpNkUj6P2dNW4UPGEBmvOSE4Gqc67OKCHy8aYZ24Q+kiJvgjw==
@@ -1097,9 +1097,9 @@
     ua-parser-js "^0.7.21"
 
 "@wessberg/rollup-plugin-ts@^1.1.73":
-  version "1.2.23"
-  resolved "https://registry.yarnpkg.com/@wessberg/rollup-plugin-ts/-/rollup-plugin-ts-1.2.23.tgz#1018d476ea327c23b033fded7ea197200e5b4552"
-  integrity sha512-qNrtleYV/kcYSoxbN7shlegfM5vSUjpYxp8QH4g2mwy9m4nbX46MXYP9bGfse7XYPxt/g/RRKgn3u2al1ACosQ==
+  version "1.2.24"
+  resolved "https://registry.yarnpkg.com/@wessberg/rollup-plugin-ts/-/rollup-plugin-ts-1.2.24.tgz#1e15d514fd5a200267276f97a9fbd12ee4d40eb9"
+  integrity sha512-lOoojizZRSWt9RY4Y7GBLR4CaCdlavUidL9WKRWGg3Ods0TMYhkvQtCGqXGTzm5dp7WkSqKCQhmY56A7uqb4hw==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/plugin-proposal-async-generator-functions" "^7.8.3"
@@ -1112,12 +1112,12 @@
     "@babel/preset-env" "^7.9.0"
     "@babel/runtime" "^7.9.2"
     "@rollup/pluginutils" "^3.0.8"
-    "@types/babel__core" "^7.1.6"
-    "@wessberg/browserslist-generator" "^1.0.34"
+    "@types/babel__core" "^7.1.7"
+    "@wessberg/browserslist-generator" "^1.0.35"
     "@wessberg/stringutil" "^1.0.19"
     "@wessberg/ts-clone-node" "^0.3.8"
-    browserslist "^4.11.0"
-    chalk "^3.0.0"
+    browserslist "^4.11.1"
+    chalk "^4.0.0"
     magic-string "^0.25.7"
     slash "^3.0.0"
     tslib "^1.11.1"
@@ -1578,7 +1578,7 @@ browserslist@4.11.0:
     node-releases "^1.1.52"
     pkg-up "^3.1.0"
 
-browserslist@^4.0.0, browserslist@^4.1.0, browserslist@^4.11.0, browserslist@^4.8.3, browserslist@^4.9.1:
+browserslist@^4.0.0, browserslist@^4.1.0, browserslist@^4.11.1, browserslist@^4.8.3, browserslist@^4.9.1:
   version "4.11.1"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.11.1.tgz#92f855ee88d6e050e7e7311d987992014f1a1f1b"
   integrity sha512-DCTr3kDrKEYNw6Jb9HFxVLQNaue8z+0ZfRBRjmCunKDEXEBajKDj2Y+Uelg+Pi29OnvaSGwjOsnRyNEkXzHg5g==
@@ -1729,10 +1729,10 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.1, chalk@^2.4.1, chalk@^2.4
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
-  integrity sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+chalk@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.0.0.tgz#6e98081ed2d17faab615eb52ac66ec1fe6209e72"
+  integrity sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
