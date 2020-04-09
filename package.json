@@ -30,7 +30,7 @@
     "watch": "rollup -cw"
   },
   "dependencies": {
-    "purgecss": "^1.3.0"
+    "purgecss": "^2.1.2"
   },
   "devDependencies": {
     "@cprecioso/tsconfig": "^0.0.4",
