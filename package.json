@@ -39,7 +39,7 @@
     "@wessberg/rollup-plugin-ts": "^1.1.73",
     "del-cli": "^1.1.0",
     "parcel-bundler": "^1.12.3",
-    "rollup": "^1.25.1",
+    "rollup": "^2.6.1",
     "typescript": "^3.4.5"
   },
   "peerDependencies": {
