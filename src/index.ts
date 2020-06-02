@@ -5,3 +5,4 @@ const plugin = (bundler: Bundler) => {
 }
 
 export default plugin
+export type { PluginOptions } from "./types"

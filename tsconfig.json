@@ -3,7 +3,8 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "lib",
-    "noEmit": true
+    "noEmit": true,
+    "declaration": true
   },
   "include": ["src/**/*", "types/**/*"],
   "exclude": ["node_modules/**/*"]
