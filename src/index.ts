@@ -4,5 +4,5 @@ const plugin = (bundler: Bundler) => {
   bundler.addPackager("css", require.resolve("./packager"))
 }
 
-export default plugin
+export default plugin as any
 export type { PluginOptions } from "./types"

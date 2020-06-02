@@ -25,4 +25,4 @@ class PurgeCSSPackager extends CSSPackager {
   }
 }
 
-export default PurgeCSSPackager
+export default PurgeCSSPackager as any
