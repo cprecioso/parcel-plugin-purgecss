@@ -2,7 +2,8 @@
   "extends": "@cprecioso/tsconfig/esm",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "lib"
+    "outDir": "lib",
+    "noEmit": true
   },
   "include": ["src/**/*", "types/**/*"],
   "exclude": ["node_modules/**/*"]
