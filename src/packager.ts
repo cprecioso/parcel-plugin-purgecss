@@ -13,7 +13,7 @@ class PurgeCSSPackager extends CSSPackager {
       if (config) {
         asset.generated!.css = new PurgeCSS({
           ...config,
-          css: [{ extension: "css", raw: asset.generated!.css }]
+          css: [{ extension: "css", raw: asset.generated!.css }],
         }).purge()[0].css
       }
     }

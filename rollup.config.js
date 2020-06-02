@@ -4,18 +4,18 @@ import ts from "@wessberg/rollup-plugin-ts"
 const options = {
   input: [
     require.resolve("./src/index.ts"),
-    require.resolve("./src/packager.ts")
+    require.resolve("./src/packager.ts"),
   ],
   output: { dir: "lib", format: "cjs" },
-  plugins: [ts()],
+  plugins: [ts({ typescript: require("typescript") })],
   external: (() => {
     const pkg = require("./package.json")
     const deps = [
       ...Object.keys(pkg.dependencies || {}),
-      ...Object.keys(pkg.peerDependencies || {})
+      ...Object.keys(pkg.peerDependencies || {}),
     ]
-    return id => deps.includes(id.split("/")[0])
-  })()
+    return (id) => deps.includes(id.split("/")[0])
+  })(),
 }
 
 export default options

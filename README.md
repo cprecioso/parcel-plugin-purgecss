@@ -29,7 +29,7 @@ They are passed directly to the purgecss postcss plugin. [Here's a list of the a
 ```js
 module.exports = {
   content: ["**/*.html"],
-  whitelist: ["my-very-special-class"]
+  whitelist: ["my-very-special-class"],
 }
 ```
 
