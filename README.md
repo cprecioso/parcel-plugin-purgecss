@@ -35,7 +35,7 @@ They are passed directly to the purgecss postcss plugin.
 
 ```js
 module.exports = {
-  content: ["**/*.html"],
+  content: ["src/**/*.html"], // Be careful not to include the `node_modules` folder in your globs.
   whitelist: ["my-very-special-class"],
 }
 ```
