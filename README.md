@@ -1,3 +1,9 @@
+# Not maintained anymore
+
+> You can still use this code, and it still should work (with Parcel v1). Please do fork it and continue work on it if you want, I'm happy to donate the npm name to a well-maintained fork.
+
+---
+
 # parcel-plugin-purgecss
 
 A Parcel plugin to remove unused rules from your bundled CSS files.
